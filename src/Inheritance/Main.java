@@ -17,5 +17,20 @@ public class Main {
 //        o1.giris(); // Calisan sınıfı methodu
 //        o1.derseGir(); // Akademisyen sınıfı methodu
 //        System.out.println(o1.getKapiNo()); // OgretimGrevlisi sınıfı methodu
+
+        // Override methods
+//        o1.giris();
+//        a1.giris();
+//        c1.giris();
+//        m1.giris();
+
+        // Polimorfizm ( Çok Biçimlilik )
+//        Calisan a2= new Akademisyen("Kodluyoruz","0532345343", "eray@gmail.com", "CENG", "Doçent");
+        // Burda önemli olan a2 nin Override edilmiş methodlara erişebilir fakat diğerlerine erişemez
+//        a2.giris(); // Calisan sınıfı fakat Akademisyen gibi davranan a2 Akademisyen sınıfı giris methodunu çağırır
+
+//        int[] loginUser = new int[5];
+        Calisan[] loginUser = {c1, a1, m1, o1}; // hepsi Calisan sınıfından türetildiği için hata vermedi
+        Calisan.girisYapanlar(loginUser);
     }
 }
