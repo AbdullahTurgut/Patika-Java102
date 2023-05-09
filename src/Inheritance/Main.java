@@ -4,12 +4,12 @@ public class Main {
     // Kalıtım (Inheritance)
     public static void main(String[] args) {
         Calisan c1 = new Calisan("Abdullah Turgut", "05330416452", "abdullah@gmail.com");
-        Akademisyen a1 = new Akademisyen("Eray Turgut", "0532345343", "eray@gmail.com", "CENG", "Doçent");
+        //Akademisyen a1 = new Akademisyen("Eray Turgut", "0532345343", "eray@gmail.com", "CENG", "Doçent");
 //        c1.giris();
 //        a1.yemekhane();//method Calisan sınıfına ait olmasına rağmen Akadamisyen sınıfından erişebiliriz(Kalıtım)
 //        a1.giris();
 
-        Memur m1 = new Memur("Asya Turgut", "051231234", "asya@gmail.com", "IT", "9-6");
+        //Memur m1 = new Memur("Asya Turgut", "051231234", "asya@gmail.com", "IT", "9-6");
 //        m1.giris(); // Calisan sınıfı methodu
 //        m1.calis(); // Kendi sınıfı methodu
 
@@ -30,7 +30,11 @@ public class Main {
 //        a2.giris(); // Calisan sınıfı fakat Akademisyen gibi davranan a2 Akademisyen sınıfı giris methodunu çağırır
 
 //        int[] loginUser = new int[5];
-        Calisan[] loginUser = {c1, a1, m1, o1}; // hepsi Calisan sınıfından türetildiği için hata vermedi
-        Calisan.girisYapanlar(loginUser);
+//        Calisan[] loginUser = {c1, a1, m1, o1}; // hepsi Calisan sınıfından türetildiği için hata vermedi
+//        Calisan.girisYapanlar(loginUser);
+
+
+        // Abstraction ( Soyutlama )
+
     }
 }

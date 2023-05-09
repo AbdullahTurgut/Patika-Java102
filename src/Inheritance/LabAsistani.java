@@ -9,4 +9,9 @@ public class LabAsistani extends Asistan{
     public void lablaraGir(){
         System.out.println(this.getAdSoyad() + " lab dersinde!!");
     }
+
+    @Override
+    public void derseGir() {
+        System.out.println();
+    }
 }

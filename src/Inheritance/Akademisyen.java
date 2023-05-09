@@ -2,7 +2,7 @@ package Inheritance;
 
 // extends ile Akademisyen sınıfını Calisan sınıfının alt sınıfı yaptık!
 // Calisan sınıfının method ve değişkenleri buraya kalıtıldı.
-public class Akademisyen extends Calisan {
+public abstract class Akademisyen extends Calisan {
 
     private String bolum;
     private String unvan;
@@ -30,9 +30,7 @@ public class Akademisyen extends Calisan {
         this.unvan = unvan;
     }
 
-    public void derseGir(){
-        System.out.println(this.getAdSoyad() + " derse giriş yaptı!!"); // getterdan yararlanarak çağırdık(Calisan sınıfından)
-    }
+    public abstract void derseGir();
 
     @Override
     public void giris(){
