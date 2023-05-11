@@ -22,6 +22,7 @@ public class ToolStore extends NormalLoc {
         switch (selectCase) {
             case 1:
                 printWeapons();
+                buyWeapon();
                 break;
             case 2:
                 printArmors();
@@ -41,6 +42,9 @@ public class ToolStore extends NormalLoc {
                     + " <Para: " + weapon.getPrice()
                     + "  Hasar: " + weapon.getDamage() + ">");
         }
+    }
+
+    private void buyWeapon() {
         System.out.print("Bir silah seçiniz: ");
         int selectWeaponID = scanner.nextInt();
         while (selectWeaponID < 1 || selectWeaponID > Weapon.weapons().length) {
@@ -53,10 +57,12 @@ public class ToolStore extends NormalLoc {
             if (selectedWeapon.getPrice() > this.getPlayer().getMoney()) {
                 System.out.println("Yeterli paranız bulunmamaktadır !");
             } else {
+                // satın alma gerçekleşti
                 System.out.println(selectedWeapon.getName() + " silahını satın aldınız !");
                 int balance = this.getPlayer().getMoney() - selectedWeapon.getPrice();
                 this.getPlayer().setMoney(balance);
                 System.out.println("Kalan paranız: " + this.getPlayer().getMoney());
+                this.getPlayer().getInventory().setWeapon(selectedWeapon); // seçtiğimiz silahı takmak için
             }
         }
     }

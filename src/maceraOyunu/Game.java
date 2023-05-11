@@ -18,6 +18,7 @@ public class Game {
 
         while (true) {
             System.out.println("---------------------------------------------------------------------");
+            player.printInfo();
             System.out.println("Bölgeler");
             System.out.println("1 - Güvenli Ev --> Sağlık yenilenir.");
             System.out.println("2 - Mağaza     --> Ekipman satın alınır.");
