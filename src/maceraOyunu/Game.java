@@ -22,9 +22,13 @@ public class Game {
             System.out.println("Bölgeler");
             System.out.println("1 - Güvenli Ev --> Sağlık yenilenir.");
             System.out.println("2 - Mağaza     --> Ekipman satın alınır.");
+            System.out.println("0 - Çıkış Yap  --> Oyunu sonlandır. ");
             System.out.print("Lütfen gitmek istediğiniz bölgeyi seçiniz: ");
             int selectLoc = scanner.nextInt();
             switch (selectLoc) {
+                case 0:
+                    location = null;
+                    break;
                 case 1:
                     location = new SafeHouse(player);
                     break;
@@ -35,6 +39,10 @@ public class Game {
                     location = new SafeHouse(player);
             }
 
+            if(location == null){
+                System.out.println("Bu zorlu savaştan çıkmayı seçtin !");
+                break;
+            }
             if (!location.onLocation()) {
                 System.out.println("Oyun Bitti !");
                 break;
