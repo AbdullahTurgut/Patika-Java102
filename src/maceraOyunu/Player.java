@@ -19,7 +19,7 @@ public class Player {
     public void selectChar() {
         GameCharacter[] charList = {new Samurai(), new Archer(), new Knight()};
         System.out.println("Karakterler");
-        System.out.println("---------------------------------------------------------");
+        System.out.println("---------------------------------------------------------------------");
         for (GameCharacter gameChar : charList) {
             System.out.println(gameChar.toString());
 //            System.out.println(
@@ -51,6 +51,7 @@ public class Player {
                 + "\tSağlık: " + this.getHealthy()
                 + "\tPara: " + this.getMoney());
     }
+
 
     public void initPlayer(GameCharacter gameCharacter) {
         this.setDamage(gameCharacter.getDamage());
