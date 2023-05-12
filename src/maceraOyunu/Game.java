@@ -22,6 +22,9 @@ public class Game {
             System.out.println("Bölgeler");
             System.out.println("1 - Güvenli Ev --> Sağlık yenilenir.");
             System.out.println("2 - Mağaza     --> Ekipman satın alınır.");
+            System.out.println("3 - Mağara     --> Ödül -> <Yemek>, zombi çıkabilir.");
+            System.out.println("4 - Orman      --> Ödül -> <Odun>, vampir çıkabilir.");
+            System.out.println("5 - Nehir      --> Ödül -> <Su>, ayı çıkabilir.");
             System.out.println("0 - Çıkış Yap  --> Oyunu sonlandır. ");
             System.out.print("Lütfen gitmek istediğiniz bölgeyi seçiniz: ");
             int selectLoc = scanner.nextInt();
@@ -34,6 +37,15 @@ public class Game {
                     break;
                 case 2:
                     location = new ToolStore(player);
+                    break;
+                case 3:
+                    location = new Cave(player);
+                    break;
+                case 4:
+                    location = new Forest(player);
+                    break;
+                case 5:
+                    location = new River(player);
                     break;
                 default:
                     location = new SafeHouse(player);
