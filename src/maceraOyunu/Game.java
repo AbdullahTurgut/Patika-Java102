@@ -12,6 +12,7 @@ public class Game {
 //        String playerName = scanner.next();
         Player player = new Player("Abdullah");
         System.out.println("Hoşgeldin " + player.getName());
+        System.out.println("---------------------------------------------------------------------");
         System.out.println("Lütfen bir karakter seçiniz");
         player.selectChar();
         Location location = null;

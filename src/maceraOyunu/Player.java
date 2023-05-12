@@ -6,6 +6,7 @@ public class Player {
 
     private int damage;
     private int healthy;
+    private int orjinalHealthy;
     private int money;
     private String charName;
     private String name; // İsmi dışarıdan alıcaz diğerleri constructorda gerek yok
@@ -52,6 +53,7 @@ public class Player {
     public void initPlayer(GameCharacter gameCharacter) {
         this.setDamage(gameCharacter.getDamage());
         this.setHealthy(gameCharacter.getHealth());
+        this.setOrjinalHealthy(gameCharacter.getHealth()); // safeHouse için
         this.setMoney(gameCharacter.getMoney());
         this.setCharName(gameCharacter.getName());
     }
@@ -116,5 +118,13 @@ public class Player {
 
     public void setInventory(Inventory inventory) {
         this.inventory = inventory;
+    }
+
+    public int getOrjinalHealthy() {
+        return orjinalHealthy;
+    }
+
+    public void setOrjinalHealthy(int orjinalHealthy) {
+        this.orjinalHealthy = orjinalHealthy;
     }
 }

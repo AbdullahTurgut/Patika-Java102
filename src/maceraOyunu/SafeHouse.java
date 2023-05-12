@@ -9,6 +9,7 @@ public class SafeHouse extends NormalLoc{
     @Override
     public boolean onLocation() {
         System.out.println("Canınız yenilendi !");
+        this.getPlayer().setHealthy(this.getPlayer().getOrjinalHealthy());
         return true;
     }
 }
