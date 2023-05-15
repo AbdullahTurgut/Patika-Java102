@@ -2,12 +2,16 @@ package generics;
 
 public class Main {
     public static void main(String[] args) {
-        String[] a = {"Java", "102", "Patika", "Dev"};
-        Integer[] b = {1, 2, 3, 4};
-        Character[] c = {'J', 'A', 'V', 'A'};
 
-        Print.printArray(a);
-        Print.printArray(b);
+//       Students<String> students = new Students<>();
+//       students.insert("Abdullah");
+
+//        String[] a = {"Java", "102", "Patika", "Dev"};
+//        Integer[] b = {1, 2, 3, 4};
+//        Character[] c = {'J', 'A', 'V', 'A'};
+//
+//        Print.printArray(a);
+//        Print.printArray(b);
 
 //        GenericNullable<Integer> n = new GenericNullable<>(10);
 //        n.run();
