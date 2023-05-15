@@ -18,5 +18,7 @@ public class Main {
         } catch (InputMismatchException e) {
             System.out.println("InputMismatchException hatası alındıa");
         }
+
+
     }
 }
