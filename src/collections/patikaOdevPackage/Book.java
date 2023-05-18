@@ -1,4 +1,4 @@
-package collections.patikaOdevPackage.bookOdev;
+package collections.patikaOdevPackage;
 
 import java.util.Date;
 

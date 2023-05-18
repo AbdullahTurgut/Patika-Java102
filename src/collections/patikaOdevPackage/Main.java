@@ -1,6 +1,5 @@
-package collections.patikaOdevPackage.bookOdev;
+package collections.patikaOdevPackage;
 
-import java.util.Date;
 import java.util.TreeSet;
 
 public class Main {
