@@ -1,3 +1,5 @@
+package hackerRank;
+
 public class BalancedBrackets {
     public static boolean areBracketsBalanced(String s) {
         int i = -1;
