@@ -4,7 +4,7 @@ import java.util.TreeMap;
 
 public class MainTreeMap {
     public static void main(String[] args) {
-        TreeMap<Integer,Student> students = new TreeMap<>();
+        TreeMap<Integer,Student> students = new TreeMap<>(new OrderByNoComparator()); // öğrenci no ya göre sıraladı
 
 
         students.put(102,new Student(102,"Abdullah",25));
