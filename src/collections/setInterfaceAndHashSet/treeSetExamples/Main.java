@@ -11,6 +11,7 @@ public class Main {
         TreeSet<Student> students = new TreeSet<>(new OrderNameComparator());
 
         students.add(new Student("Abdullah", 20));
+        students.add(new Student("Abdullah", 20));
         students.add(new Student("Asya", 90));
         students.add(new Student("Eray", 70));
         students.add(new Student("Kübra", 95));
