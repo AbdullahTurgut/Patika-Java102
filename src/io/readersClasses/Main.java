@@ -1,7 +1,6 @@
 package io.readersClasses;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.InputStreamReader;
 
 public class Main {
